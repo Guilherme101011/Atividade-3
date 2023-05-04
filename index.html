@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sequência de Botões</title>
+	<style>
+		.button-row {
+			display: flex;
+			justify-content: center;
+		}
+
+		.button {
+			font-size: 20px;
+			border: 1px solid black;
+			outline: none;
+			cursor: pointer;
+			padding: 14px 20px;
+			transition: background-color 0.3s ease;
+		}
+
+		.button1 {
+			background-color: #4CAF50;
+			color: white;
+		}
+
+		.button2 {
+			background-color: #008CBA;
+			color: white;
+		}
+
+		.button3 {
+			background-color: #f44336;
+			color: white;
+		}
+
+		.button4 {
+			background-color: #e7e7e7;
+			color: black;
+		}
+
+		.button5 {
+			background-color: #292828f1;
+			color: rgba(255, 255, 255, 0.747);
+		}
+
+		.button:hover {
+			background-color: #555555;
+			color: white;
+		}
+
+		@media screen and (max-width: 600px) {
+			.button-row {
+				flex-direction: column;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="button-row">
+		<button class="button button1"><<</button>
+		<button class="button button2">1</button>
+		<button class="button button3">2</button>
+		<button class="button button4">3</button>
+		<button class="button button5">>></button>
+	</div>
+</body>
+</html>
+
